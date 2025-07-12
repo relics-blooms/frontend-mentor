@@ -1,0 +1,33 @@
+{
+  "extensions": {
+    "recommendations": []
+  },
+  "folders": [
+    {
+      "name": "__ROOT__",
+      "path": "../"
+    }
+  ],
+  "settings": {
+    "explorer.compactFolders": false,
+    "files.exclude": {
+      "**/.DS_Store": true,
+      "**/.angular": true,
+      "**/.git": true,
+      "**/.hg": true,
+      "**/.mvn": true,
+      "**/.ruby-lsp": true,
+      "**/.svn": true,
+      "**/CVS": true,
+      "**/Thumbs.db": true,
+      "**/mvnw": true,
+      "**/mvnw.cmd": true,
+      "**/node_modules": true,
+      "**/pnpm-lock.yaml": true,
+      "**/target": true
+    },
+    "java.format.settings.url": "java.formatter.xml",
+    "java.inlayHints.parameterNames.enabled": "none",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable"
+  }
+}

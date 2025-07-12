@@ -1,0 +1,96 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": false
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular": {
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "configurations": {
+            "development": {
+              "extractLicenses": false,
+              "optimization": false,
+              "sourceMap": true
+            },
+            "production": {
+              "budgets": [
+                {
+                  "maximumError": "1MB",
+                  "maximumWarning": "500kB",
+                  "type": "initial"
+                },
+                {
+                  "maximumError": "8kB",
+                  "maximumWarning": "4kB",
+                  "type": "anyComponentStyle"
+                }
+              ],
+              "index": "src/main.html",
+              "outputHashing": "all"
+            }
+          },
+          "defaultConfiguration": "production",
+          "options": {
+            "assets": [],
+            "baseHref": "/angular/",
+            "browser": "src/main.ts",
+            "index": "src/main.html",
+            "outputPath": "../../dist/angular",
+            "polyfills": ["zone.js"],
+            "styles": ["src/main.css"],
+            "tsConfig": "tsconfig.app.json"
+          }
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "configurations": {
+            "production": {
+              "devServerTarget": "angular:serve:production"
+            }
+          },
+          "options": {
+            "devServerTarget": "angular:serve"
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular/build:extract-i18n"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "development": {
+              "buildTarget": "angular:build:development",
+              "port": 3000
+            },
+            "production": {
+              "buildTarget": "angular:build:production",
+              "port": 3000
+            }
+          },
+          "defaultConfiguration": "development",
+          "options": {
+            "verbose": true
+          }
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "assets": [],
+            "polyfills": ["zone.js", "zone.js/testing"],
+            "styles": ["src/main.css"],
+            "tsConfig": "tsconfig.spec.json"
+          }
+        }
+      },
+      "prefix": "app",
+      "projectType": "application",
+      "root": "",
+      "schematics": {},
+      "sourceRoot": "src"
+    }
+  },
+  "version": 1
+}

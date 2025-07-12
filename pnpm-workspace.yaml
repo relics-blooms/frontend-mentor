@@ -1,0 +1,6 @@
+packages:
+  - "backend/nest"
+  - "frontend/angular"
+  - "frontend/react"
+  - "frontend/vue"
+  - "frontend/www"
