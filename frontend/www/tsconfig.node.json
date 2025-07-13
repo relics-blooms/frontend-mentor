@@ -8,9 +8,7 @@
     "esModuleInterop": true,
     "exactOptionalPropertyTypes": true,
     "isolatedModules": true,
-    "lib": [
-      "ES2023"
-    ],
+    "lib": ["ES2023"],
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
@@ -27,9 +25,16 @@
     "strict": true,
     "target": "ES2023",
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "types": ["node"],
     "verbatimModuleSyntax": true
   },
-  "include": [
-    "vite.config.ts"
+  "files": [
+    "cypress.config.*",
+    "env.d.ts",
+    "eslint.config.*",
+    "nightwatch.conf.*",
+    "playwright.config.*",
+    "vite.config.*",
+    "vitest.config.*"
   ]
 }

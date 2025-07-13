@@ -1,14 +1,60 @@
 {
   "extensions": {
-    "recommendations": []
+    "recommendations": [],
   },
   "folders": [
     {
+      "name": "__TODO__",
+      "path": "../.github/project/board",
+    },
+    {
       "name": "__ROOT__",
-      "path": "../"
-    }
+      "path": "../",
+    },
+    // {
+    //   "name": "backend/nest",
+    //   "path": "../backend/nest",
+    // },
+    // {
+    //   "name": "backend/springboot",
+    //   "path": "../backend/springboot",
+    // },
+    // {
+    //   "name": "dist",
+    //   "path": "../dist",
+    // },
+    // {
+    //   "name": "frontend/angular",
+    //   "path": "../frontend/angular",
+    // },
+    // {
+    //   "name": "frontend/react",
+    //   "path": "../frontend/react",
+    // },
+    // {
+    //   "name": "frontend/vue",
+    //   "path": "../frontend/vue",
+    // },
+    // {
+    //   "name": "frontend/www",
+    //   "path": "../frontend/www",
+    // },
+    // {
+    //   "name": "public",
+    //   "path": "../public",
+    // },
+    // {
+    //   "name": "tasks",
+    //   "path": "../tasks",
+    // },
   ],
   "settings": {
+    "github.copilot.chat.agent.autoFix": false,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "github.copilot.chat.edits.temporalContext.enabled": true,
+    "github.copilot.editor.enableCodeActions": false,
+    "breadcrumbs.enabled": false,
     "explorer.compactFolders": false,
     "files.exclude": {
       "**/.DS_Store": true,
@@ -20,14 +66,15 @@
       "**/.svn": true,
       "**/CVS": true,
       "**/Thumbs.db": true,
-      "**/mvnw": true,
+      "**/mvnw": false,
       "**/mvnw.cmd": true,
       "**/node_modules": true,
       "**/pnpm-lock.yaml": true,
-      "**/target": true
+      "**/target": true,
     },
     "java.format.settings.url": "java.formatter.xml",
     "java.inlayHints.parameterNames.enabled": "none",
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable"
-  }
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable",
+    "vsicons.presets.angular": true,
+  },
 }

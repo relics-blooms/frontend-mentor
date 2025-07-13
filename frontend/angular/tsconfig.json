@@ -36,6 +36,9 @@
     {
       "path": "./tsconfig.e2e.json"
     },
+        {
+      "path": "./tsconfig.node.json"
+    },
     {
       "path": "./tsconfig.spec.json"
     }

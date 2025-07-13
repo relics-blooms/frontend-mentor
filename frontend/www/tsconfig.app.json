@@ -9,11 +9,7 @@
     "exactOptionalPropertyTypes": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
@@ -33,7 +29,5 @@
     "useDefineForClassFields": true,
     "verbatimModuleSyntax": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["env.d.ts", "src/**/*", "src/**/*.tsx"]
 }

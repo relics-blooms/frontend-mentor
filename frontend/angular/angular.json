@@ -28,15 +28,21 @@
                   "type": "anyComponentStyle"
                 }
               ],
-              "index": "src/main.html",
               "outputHashing": "all"
             }
           },
           "defaultConfiguration": "production",
           "options": {
-            "assets": [],
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "../../public",
+                "output": "assets/"
+              }
+            ],
             "baseHref": "/angular/",
             "browser": "src/main.ts",
+            "deleteOutputPath": false,
             "index": "src/main.html",
             "outputPath": "../../dist/angular",
             "polyfills": ["zone.js"],
@@ -62,16 +68,16 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "development": {
-              "buildTarget": "angular:build:development",
-              "port": 3000
+              "buildTarget": "angular:build:development"
             },
             "production": {
-              "buildTarget": "angular:build:production",
-              "port": 3000
+              "buildTarget": "angular:build:production"
             }
           },
           "defaultConfiguration": "development",
           "options": {
+            "port": 3100,
+            "proxyConfig": "proxy.conf.json",
             "verbose": true
           }
         },
@@ -81,7 +87,8 @@
             "assets": [],
             "polyfills": ["zone.js", "zone.js/testing"],
             "styles": ["src/main.css"],
-            "tsConfig": "tsconfig.spec.json"
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js"
           }
         }
       },

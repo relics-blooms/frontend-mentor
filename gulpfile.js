@@ -1,0 +1,43 @@
+import {
+  build_all,
+  build_backend,
+  build_frontend,
+  build_maven_springboot,
+  build_pnpm_angular,
+  build_pnpm_nest,
+  build_pnpm_react,
+  build_pnpm_vue,
+  build_pnpm_www,
+} from "./tasks/build.js";
+import {
+  dev_all,
+  dev_backend,
+  dev_frontend,
+  dev_maven_springboot,
+  dev_pnpm_angular,
+  dev_pnpm_nest,
+  dev_pnpm_react,
+  dev_pnpm_vue,
+  dev_pnpm_www,
+} from "./tasks/dev.js";
+
+export {
+  build_all,
+  build_backend,
+  build_frontend,
+  build_maven_springboot,
+  build_pnpm_angular,
+  build_pnpm_nest,
+  build_pnpm_react,
+  build_pnpm_vue,
+  build_pnpm_www,
+  dev_all,
+  dev_backend,
+  dev_frontend,
+  dev_maven_springboot,
+  dev_pnpm_angular,
+  dev_pnpm_nest,
+  dev_pnpm_react,
+  dev_pnpm_vue,
+  dev_pnpm_www,
+};

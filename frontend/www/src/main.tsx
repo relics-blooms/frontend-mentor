@@ -1,16 +1,12 @@
 import "./main.css";
-import HomePage from "./pages/index-page";
+import router from "./router";
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { RouterProvider } from "react-router";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<HomePage />} path="/" />
-      </Routes>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   </StrictMode>,
 );

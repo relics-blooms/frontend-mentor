@@ -5,18 +5,10 @@ const base_options = {};
 export default {
   overrides: [
     {
-      files: "*.component.ts",
-      options: {
-        ...base_options,
-        plugins: [],
-        parser: "angular",
-      },
-    },
-    {
       files: "*.css",
       options: {
         ...base_options,
-        plugins: [],
+        plugins: ["prettier-plugin-style-order"],
         parser: "css",
       },
     },
@@ -24,7 +16,12 @@ export default {
       files: "*.html",
       options: {
         ...base_options,
-        plugins: [],
+        attributeGroups: ["$DEFAULT"],
+        attributeSort: "ASC",
+        plugins: [
+          "prettier-plugin-organize-attributes",
+          "prettier-plugin-tailwindcss"
+        ],
         parser: "html",
       },
     },
@@ -32,7 +29,10 @@ export default {
       files: "*.js",
       options: {
         ...base_options,
-        plugins: [],
+        plugins: [
+          "prettier-plugin-organize-imports",
+          "prettier-plugin-tailwindcss"
+        ],
         parser: "babel",
       },
     },
@@ -40,7 +40,7 @@ export default {
       files: "*.json",
       options: {
         ...base_options,
-        plugins: [],
+        plugins: ["prettier-plugin-sort-json"],
         parser: "json",
       },
     },
@@ -53,11 +53,25 @@ export default {
       },
     },
     {
-      files: "*.scss",
+      files: "*.ts",
       options: {
         ...base_options,
-        plugins: [],
-        parser: "scss",
+        plugins: [
+          "prettier-plugin-organize-imports",
+          "prettier-plugin-tailwindcss"
+        ],
+        parser: "typescript",
+      },
+    },
+    {
+      files: "*.tsx",
+      options: {
+        ...base_options,
+        plugins: [
+          "prettier-plugin-organize-imports",
+          "prettier-plugin-tailwindcss"
+        ],
+        parser: "typescript",
       },
     },
     {
@@ -72,7 +86,10 @@ export default {
       files: "*.vue",
       options: {
         ...base_options,
-        plugins: [],
+        plugins: [
+          "prettier-plugin-organize-imports",
+          "prettier-plugin-tailwindcss"
+        ],
         parser: "vue",
       },
     },

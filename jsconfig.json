@@ -4,7 +4,7 @@
     "allowUnusedLabels": false,
     "checkJs": true,
     "esModuleInterop": true,
-    "exactOptionalPropertyTypes": true,
+    "exactOptionalPropertyTypes": false,
     "isolatedModules": true,
     "lib": [
       "es2024",
@@ -23,12 +23,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "target": "es2024"
   },
   "files": [
-    "./gulp.js",
-    "./prettier.config.js"
+    "gulpfile.js",
+    "prettier.config.js"
   ],
   "include": [
     "./tasks/*.js"
