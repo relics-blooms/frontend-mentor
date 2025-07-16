@@ -1,0 +1,63 @@
+[
+  {
+    "instructions": {
+      "1.": "Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+      "2.": "Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.",
+      "3.": "Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
+      "4.": "Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
+      "5.": "Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
+      "6.": "Enjoy: Serve hot, with additional salt and pepper if needed."
+    },
+    "description": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+    "ingredients": [
+      "2-3 large eggs",
+      "Salt, to taste",
+      "Pepper, to taste",
+      "1 tablespoon of butter or oil",
+      "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+    ],
+    "nutrition": {
+      "calories": "277kcal",
+      "carbs": "0g",
+      "fat": "22g",
+      "protein": "20g"
+    },
+    "preparation-time": {
+      "cooking": "5 minutes",
+      "preparation": "5 minutes",
+      "total": "10 minutes"
+    },
+    "title": "Simple Omelette"
+  },
+  {
+    "description": "A quick and healthy breakfast or snack. Creamy avocado is spread over crisp toast and topped with fresh tomatoes and a hint of spice.",
+    "ingredients": [
+      "2 slices of bread",
+      "1 ripe avocado",
+      "Salt, to taste",
+      "Pepper, to taste",
+      "Lemon juice, to taste",
+      "4-5 cherry tomatoes, sliced",
+      "Red pepper flakes or herbs (optional)"
+    ],
+    "instructions": {
+      "1.": "Prepare the bread: Lightly toast two slices of bread until golden brown.",
+      "2.": "Mash the avocado: In a small bowl, mash the avocado with a fork. Add a pinch of salt, pepper, and a squeeze of lemon juice.",
+      "3.": "Spread avocado: Evenly spread the mashed avocado onto the toasted bread slices.",
+      "4.": "Add toppings: Top with sliced cherry tomatoes and a sprinkle of red pepper flakes or your favorite herbs.",
+      "5.": "Serve: Enjoy immediately while the toast is still warm."
+    },
+    "nutrition": {
+      "calories": "250kcal",
+      "carbs": "28g",
+      "fat": "14g",
+      "protein": "5g"
+    },
+    "preparation-time": {
+      "cooking": "5 minutes",
+      "preparation": "5 minutes",
+      "total": "10 minutes"
+    },
+    "title": "Avocado Toast"
+  }
+]

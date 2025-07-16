@@ -11,49 +11,8 @@
       "name": "__ROOT__",
       "path": "../",
     },
-    // {
-    //   "name": "backend/nest",
-    //   "path": "../backend/nest",
-    // },
-    // {
-    //   "name": "backend/springboot",
-    //   "path": "../backend/springboot",
-    // },
-    // {
-    //   "name": "dist",
-    //   "path": "../dist",
-    // },
-    // {
-    //   "name": "frontend/angular",
-    //   "path": "../frontend/angular",
-    // },
-    // {
-    //   "name": "frontend/react",
-    //   "path": "../frontend/react",
-    // },
-    // {
-    //   "name": "frontend/vue",
-    //   "path": "../frontend/vue",
-    // },
-    // {
-    //   "name": "frontend/www",
-    //   "path": "../frontend/www",
-    // },
-    // {
-    //   "name": "public",
-    //   "path": "../public",
-    // },
-    // {
-    //   "name": "tasks",
-    //   "path": "../tasks",
-    // },
   ],
   "settings": {
-    "github.copilot.chat.agent.autoFix": false,
-    "github.copilot.chat.agent.thinkingTool": true,
-    "github.copilot.chat.editor.temporalContext.enabled": true,
-    "github.copilot.chat.edits.temporalContext.enabled": true,
-    "github.copilot.editor.enableCodeActions": false,
     "breadcrumbs.enabled": false,
     "explorer.compactFolders": false,
     "files.exclude": {
@@ -66,7 +25,7 @@
       "**/.svn": true,
       "**/CVS": true,
       "**/Thumbs.db": true,
-      "**/mvnw": false,
+      "**/mvnw": true,
       "**/mvnw.cmd": true,
       "**/node_modules": true,
       "**/pnpm-lock.yaml": true,

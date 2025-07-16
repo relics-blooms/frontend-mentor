@@ -23,6 +23,7 @@
     "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "outDir": "./out-tsc/node",
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2023",

@@ -37,7 +37,7 @@
               {
                 "glob": "**/*",
                 "input": "../../public",
-                "output": "assets/"
+                "output": "/"
               }
             ],
             "baseHref": "/angular/",
@@ -45,7 +45,10 @@
             "deleteOutputPath": false,
             "index": "src/main.html",
             "outputPath": "../../dist/angular",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js",
+              "@angular/localize/init"
+            ],
             "styles": ["src/main.css"],
             "tsConfig": "tsconfig.app.json"
           }
@@ -85,10 +88,14 @@
           "builder": "@angular/build:karma",
           "options": {
             "assets": [],
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "karmaConfig": "karma.conf.js",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing",
+              "@angular/localize/init"
+            ],
             "styles": ["src/main.css"],
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js"
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       },

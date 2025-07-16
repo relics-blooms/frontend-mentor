@@ -1,4 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile: 37.5rem;
+  --breakpoint-tablet: 76.8rem;
+  --breakpoint-desktop: 144rem;
+}
 
 @layer base {
   html {

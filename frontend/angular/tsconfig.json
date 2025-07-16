@@ -24,6 +24,9 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022"
@@ -36,7 +39,7 @@
     {
       "path": "./tsconfig.e2e.json"
     },
-        {
+    {
       "path": "./tsconfig.node.json"
     },
     {
